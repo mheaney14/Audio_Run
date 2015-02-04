@@ -6,7 +6,7 @@ public class BumperScript : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if (other.tag == "Player") {
-			Debug.Break ();
+			Application.LoadLevel(0);
 			return;		
 		}
 

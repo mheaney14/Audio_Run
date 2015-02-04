@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraFollowRun : MonoBehaviour {
 
-	public float CameraOffset = 6;
+	public float CameraOffset = 4;
 
 	public Transform player;
 	// Use this for initialization

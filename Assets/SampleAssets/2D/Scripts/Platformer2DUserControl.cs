@@ -17,6 +17,10 @@ namespace UnitySampleAssets._2D
 
         private void Update()
         {
+			if (Input.touchCount > 0){
+				jump = true;
+			}
+
             if(!jump)
             // Read the jump input in Update so button presses aren't missed.
             jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -28,7 +32,10 @@ namespace UnitySampleAssets._2D
             //bool crouch = Input.GetKey(KeyCode.LeftControl);
             //float h = CrossPlatformInputManager.GetAxis("Horizontal");
             // Pass all parameters to the character control script.
-            character.Move(1, false, jump);
+			if (Input.touchCount > 0){
+				jump = true;
+			}
+			character.Move(1, false, jump);
             jump = false;
         }
     }

@@ -3,13 +3,15 @@
 namespace UnitySampleAssets._2D
 {
 
+
+
     public class PlatformerCharacter2D : MonoBehaviour
     {
         private bool facingRight = true; // For determining which way the player is currently facing.
 
         [SerializeField] private float maxSpeed = 5f; // The fastest the player can travel in the x axis.
         [SerializeField] private float jumpForce = 200f; // Amount of force added when the player jumps.	
-
+		[SerializeField] private float playerAcceleration = 0.02f;
         [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;
                                                      // Amount of maxSpeed applied to crouching movement. 1 = 100%
 
@@ -45,7 +47,10 @@ namespace UnitySampleAssets._2D
 			if (grounded)
 				doubleJump = false;
         }
-
+		void Update () {
+			maxSpeed = maxSpeed + playerAcceleration;
+			jumpForce = jumpForce + playerAcceleration / 2;
+		}
 
         public void Move(float move, bool crouch, bool jump)
         {
