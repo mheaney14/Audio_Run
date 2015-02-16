@@ -52,7 +52,7 @@ namespace UnitySampleAssets._2D
 			jumpForce = jumpForce + playerAcceleration / 2;
 		}
 
-        public void Move(float move, bool crouch, bool jump)
+        public void Move(float move, bool crouch, bool jump,bool stop)
         {
 
 
@@ -104,6 +104,10 @@ namespace UnitySampleAssets._2D
 				if(!grounded)
 					doubleJump = true;
             }
+			if (stop && rigidbody2D.velocity.y > 0f) {
+				rigidbody2D.velocity = new Vector2(rigidbody2D.velocity.x,0f);
+				stop = false;
+			}
         }
 
 
