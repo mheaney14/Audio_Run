@@ -12,6 +12,7 @@ namespace UnitySampleAssets._2D
         [SerializeField] private float maxSpeed = 5f; // The fastest the player can travel in the x axis.
         [SerializeField] private float jumpForce = 200f; // Amount of force added when the player jumps.	
 		[SerializeField] private float playerAcceleration = 0.02f;
+		[SerializeField] private bool doubleBool = false;
         [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;
                                                      // Amount of maxSpeed applied to crouching movement. 1 = 100%
 
@@ -89,7 +90,7 @@ namespace UnitySampleAssets._2D
                     Flip();
             }
             // If the player should jump...
-			if ((grounded || !doubleJump) && jump)
+			if ((grounded || (!doubleJump&&doubleBool)) && jump)
             {
 				//anim.GetBool("Ground") && 
                 // Add a vertical force to the player.
