@@ -1,16 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SampleAssets\2D\Scripts\PlatformerCharacter2D.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlatformerCharacter2D.cs">
     <Files>
-      <File FileName="Audio_Run.sln" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\CameraFollowRun.cs" Line="1" Column="1" />
-      <File FileName="Assets\SampleAssets\2D\Scripts\Platformer2DUserControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\SpawnerScript.cs" Line="23" Column="82" />
-      <File FileName="Assets\Scripts\BumperScript.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\Justin\Documents\Audio_Run\Assets\SampleAssets\Effects\LightShafts\Scripts\LightShafts.Resources.cs" Line="1" Column="1" />
-      <File FileName="Assets\SampleAssets\2D\Scripts\Restarter.cs" Line="1" Column="1" />
-      <File FileName="Assets\SampleAssets\2D\Scripts\PlatformerCharacter2D.cs" Line="93" Column="46" />
-      <File FileName="Assets\SampleAssets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlatformerCharacter2D.cs" Line="39" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
