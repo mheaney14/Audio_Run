@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\ManagerScript.cs" />
      <Compile Include="Assets\SampleAssets\Cameras\Scripts\AbstractTargetFollower.cs" />
      <Compile Include="Assets\SampleAssets\Cameras\Scripts\AutoCam.cs" />
      <Compile Include="Assets\SampleAssets\Cameras\Scripts\FreeLookCam.cs" />
@@ -179,7 +178,9 @@
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowRun.cs" />
+     <Compile Include="Assets\Scripts\ManagerScript.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\PauseGame.cs" />
      <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\Restarter.cs" />
