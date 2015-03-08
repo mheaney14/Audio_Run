@@ -16,13 +16,13 @@ public class SpawnerScript : MonoBehaviour {
 	}
 	
 	void Spawn(){
-		if (camera.oldPositionX != camera.position.x && camera.oldPositionY != camera.position.y) {
+	//	if (CameraFollowRun.oldPositionX != CameraFollowRun.currentPositionX & CameraFollowRun.oldPositionY != CameraFollowRun.currentPositionY) {
 						Invoke ("Spawn", Random.Range (spawnMin, spawnMax)); 
 						float deltapos = Random.Range (-delta, delta);
 						Vector3 position = new Vector3 (transform.position.x, deltapos);
 						Instantiate (obj [Random.Range (0, obj.Length)], position, Quaternion.identity);
 						transform.Translate (Vector3.up * deltapos);
-						Thread.Sleep (1);
-				}
+						Thread.Sleep (4);
+			//	}
 	}
 }

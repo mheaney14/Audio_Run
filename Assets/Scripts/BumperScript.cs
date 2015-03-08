@@ -10,9 +10,14 @@ public class BumperScript : MonoBehaviour {
 			return;		
 		}
 
+		if (other.tag == "MainCamera") {
+		}
+
 		if (other.gameObject.transform.parent) {
 						Destroy (other.gameObject.transform.parent.gameObject);
 		} 
+		
+
 		else {
 			Destroy (other.gameObject);
 		}
