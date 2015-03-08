@@ -174,10 +174,12 @@
      <Compile Include="Assets\SampleAssets\Vehicles\Car\Scripts\Wheel.cs" />
      <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\Ball.cs" />
      <Compile Include="Assets\SampleAssets\Vehicles\RollerBall\Scripts\BallUserControl.cs" />
+     <Compile Include="Assets\Scripts\BadBlockScript.cs" />
      <Compile Include="Assets\Scripts\BumperScript.cs" />
      <Compile Include="Assets\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\CameraFollowRun.cs" />
+     <Compile Include="Assets\Scripts\NotBadBlockScript.cs" />
      <Compile Include="Assets\Scripts\Platformer2DUserControl.cs" />
      <Compile Include="Assets\Scripts\PlatformerCharacter2D.cs" />
      <Compile Include="Assets\Scripts\Restarter.cs" />
