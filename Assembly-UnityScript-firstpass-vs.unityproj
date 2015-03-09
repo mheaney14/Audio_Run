@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\UniFileBrowser\UniFileBrowser.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />
@@ -139,6 +140,7 @@
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\SepiaToneEffect.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\TwirlEffect.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\VortexEffect.shader" />
+     <None Include="Assets\UnityFileBrowser\UniFileBrowser 2.0 Upgrade Guide.txt" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\ContrastStretch\Adaptation.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
      <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
@@ -155,6 +157,7 @@
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
      <None Include="Assets\SampleAssets\Effects\LightShafts\Shaders\Raymarch.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\EdgeDetectNormals.shader" />
+     <None Include="Assets\UnityFileBrowser\UniFileBrowser changelog.txt" />
      <None Include="Assets\SampleAssets\Effects\LightShafts\Shaders\FinalInterpolation.shader" />
      <None Include="Assets\SampleAssets\Effects\ImageEffects (Pro Only)\Shaders\PrepareSunShaftsBlur.shader" />
      <None Include="Assets\SampleAssets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
