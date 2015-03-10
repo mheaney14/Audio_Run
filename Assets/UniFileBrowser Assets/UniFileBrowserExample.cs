@@ -15,7 +15,7 @@ public class UniFileBrowserExample : MonoBehaviour {
 			pathChar = '\\';
 		}
 	}
-	
+
 	void OnGUI () {
 		if (GUI.Button (new Rect(100, 50, 95, 35), "Open")) {
 			if (UniFileBrowser.use.allowMultiSelect) {
