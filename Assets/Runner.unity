@@ -774,6 +774,97 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2120761688}
   m_RootOrder: 0
+--- !u!1 &513332467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 513332469}
+  - 114: {fileID: 513332468}
+  m_Layer: 0
+  m_Name: FileBrowserMananger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &513332468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 513332467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eaf0ff3cd11923cd00014eb25bb6539, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filterFiles: 0
+  filterFileExtensions: []
+  autoAddExtension: 0
+  addedExtension: 
+  useFilterButton: 0
+  useDeleteButton: 0
+  defaultFileName: 
+  maxFileNameLength: 32
+  limitToInitialFolder: 0
+  showVolumes: 0
+  volumesAreSeparate: 0
+  showDate: 0
+  dateWidthAdd: 8
+  sortType: 0
+  m_allowMultiSelect: 0
+  allowAppBundleBrowsing: 0
+  showHiddenOSXFiles: 0
+  preventIllegalCharInput: 1
+  illegalChars: \/|:<>?"+[]
+  allowWindowResize: 1
+  allowWindowDrag: 1
+  fileWindowID: 50
+  messageWindowID: 51
+  doubleClickTime: .5
+  fileWindowInset: 25
+  defaultFileWindowRect:
+    serializedVersion: 2
+    x: 400
+    y: 150
+    width: 500
+    height: 600
+  minWindowWidth: 435
+  minWindowHeight: 300
+  messageWindowSize: {x: 400, y: 160}
+  popupRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 300
+    height: 33
+  buttonSize: {x: 72, y: 35}
+  windowTabOffset: {x: 0, y: 3}
+  guiDepth: -1
+  guiSkin: {fileID: 11400000, guid: 437d14becad2449819a39ae743d8cb5a, type: 2}
+  highlightTexture: {fileID: 2800000, guid: 4ee9864d13ddd40a8b3bcafb5c75be6d, type: 3}
+  highlightTextColor: {r: 0, g: 0, b: 0, a: 1}
+  windowTab: {fileID: 2800000, guid: af702ba2a5f4048ad9bd6f60b5a6909c, type: 3}
+  messageWindowTexture: {fileID: 2800000, guid: 4767637e9ea4b44da8648130624fe1e7,
+    type: 3}
+  driveIcon: {fileID: 2800000, guid: 5253a30876fb9444199d71e8f288385d, type: 3}
+  folderIcon: {fileID: 2800000, guid: 87c12970698a14a46b844b023ef3ab94, type: 3}
+  fileIcon: {fileID: 2800000, guid: 5d92a318bda704d1993660628c2b4819, type: 3}
+--- !u!4 &513332469
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 513332467}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.66999996, y: -.0900000036, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1300515718}
+  m_RootOrder: 4
 --- !u!1001 &668503192
 Prefab:
   m_ObjectHideFlags: 0
@@ -1050,8 +1141,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 948854186}
-  - 82: {fileID: 948854185}
   - 114: {fileID: 948854187}
+  - 82: {fileID: 948854185}
   m_Layer: 0
   m_Name: AudioSource
   m_TagString: Untagged
@@ -1141,6 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myPath: 
+  opened: 0
 --- !u!1001 &1061105370
 Prefab:
   m_ObjectHideFlags: 0
@@ -1430,6 +1522,7 @@ Transform:
   - {fileID: 948854186}
   - {fileID: 887669467}
   - {fileID: 237461796}
+  - {fileID: 513332469}
   m_Father: {fileID: 0}
   m_RootOrder: 4
 --- !u!114 &1300515719
@@ -1443,7 +1536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 077993317a21f0d488814dfaeea7b0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraOffset: 15
+  CameraOffset: 4
   player: {fileID: 2120761688}
 --- !u!1 &1361015582
 GameObject:
