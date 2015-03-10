@@ -1,10 +1,18 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ManagerScript.cs">
     <Files>
       <File FileName="Assets/Scripts/MenuScripts/MainMenu.cs" Line="9" Column="4" />
       <File FileName="Audio_Run.sln" Line="64" Column="1" />
       <File FileName="Assets/ManagerScript.cs" Line="6" Column="3" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnerScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MusicGrabber.js" Line="15" Column="1" />
+      <File FileName="Assets\Scripts\SpawnerScript.cs" Line="25" Column="24" />
+>>>>>>> origin/Justin
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

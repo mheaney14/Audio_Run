@@ -59,9 +59,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 426204}
+  - 114: {fileID: 11452960}
+  - 61: {fileID: 6120358}
   m_Layer: 0
   m_Name: Big Block
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +119,17 @@ Transform:
   - {fileID: 426202}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6120358
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126204}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 7.47966623, y: .565608978}
+  m_Center: {x: .162897095, y: -.687786102}
 --- !u!61 &6126200
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -150,6 +163,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 2.5, y: .625}
   m_Center: {x: 1.25, y: .3125}
+--- !u!114 &11452960
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd6a91cf1b51744bf2eb2e4ffb482a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21226200
 SpriteRenderer:
   m_ObjectHideFlags: 1
