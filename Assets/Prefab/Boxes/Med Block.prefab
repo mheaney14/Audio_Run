@@ -8,9 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 421664}
+  - 114: {fileID: 11462686}
+  - 61: {fileID: 6140020}
   m_Layer: 0
   m_Name: Med Block
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,6 +111,28 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 2.5, y: .625}
   m_Center: {x: 1.25, y: .3125}
+--- !u!61 &6140020
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121664}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 4.92707396, y: .569633484}
+  m_Center: {x: -1.10280895, y: -.69934088}
+--- !u!114 &11462686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54dd6a91cf1b51744bf2eb2e4ffb482a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21221664
 SpriteRenderer:
   m_ObjectHideFlags: 1
