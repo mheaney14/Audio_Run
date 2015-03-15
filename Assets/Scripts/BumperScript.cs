@@ -11,8 +11,12 @@ public class BumperScript : MonoBehaviour {
 		}
 
 		if (other.tag == "MainCamera") {
+			return;
 		}
 
+		if (other.tag == "DND") {
+			return;
+		}
 		if (other.gameObject.transform.parent) {
 						Destroy (other.gameObject.transform.parent.gameObject);
 		} 
