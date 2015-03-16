@@ -14,7 +14,11 @@ public class SpawnerScript : MonoBehaviour {
 	void Start () {
 		Spawn ();
 	}
-	
+
+
+	//tests
+	//make GameObject[] obj is not null
+	//
 	void Spawn(){
 	//	if (CameraFollowRun.oldPositionX != CameraFollowRun.currentPositionX & CameraFollowRun.oldPositionY != CameraFollowRun.currentPositionY) {
 						Invoke ("Spawn", Random.Range (spawnMin, spawnMax)); 
