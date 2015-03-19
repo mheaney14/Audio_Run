@@ -1,10 +1,32 @@
 ﻿<Properties>
+<<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MenuScripts/MainMenu.cs">
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ManagerScript.cs">
+    <Files>
+      <File FileName="Assets/Scripts/MenuScripts/MainMenu.cs" Line="9" Column="4" />
+      <File FileName="Audio_Run.sln" Line="64" Column="1" />
+      <File FileName="Assets/ManagerScript.cs" Line="6" Column="3" />
+=======
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpawnerScript.cs">
+    <Files>
+      <File FileName="Assets\Scripts\MusicGrabber.js" Line="15" Column="1" />
+      <File FileName="Assets\Scripts\SpawnerScript.cs" Line="25" Column="24" />
+>>>>>>> origin/Justin
+=======
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PauseGame.cs">
+>>>>>>> origin/Menu
     <Files>
       <File FileName="Assets/Scripts/PauseGame.cs" Line="7" Column="29" />
       <File FileName="Assets/Scripts/MenuScripts/MainMenu.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Platformer2DUserControl.cs" Line="1" Column="1" />
+>>>>>>> 9a580419259253b5348346ab76e1ef1d96983f5e
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -88,6 +88,8 @@ MonoBehaviour:
   - {fileID: 178238, guid: 09a2c021c35a70c44889e8f193a03e98, type: 2}
   spawnMin: 1
   spawnMax: 2
+  delta: 3
+  max: 20
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
