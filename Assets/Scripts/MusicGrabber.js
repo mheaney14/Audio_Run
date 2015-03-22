@@ -7,6 +7,7 @@
     public var playing : int = 0;
     private var message = "";
 	private var alpha = 1.0;
+	private var Manager : GameObject;
     
     
     function grabMusic(){
@@ -21,15 +22,10 @@
     }
     function Start()
     {
-
-    	//Time.timeScale =0;
-
-
-
-    	
-	    //myPath = "/mnt/sdcard/music";
-	   
-	    //Time.timeScale =1;
+	Time.timeScale = 0;
+	grabMusic();
+	    
+    
     }
         function Update()
     {
@@ -37,7 +33,7 @@
     			    if (!audio.isPlaying && audio.clip.isReadyToPlay){
 	   					 audio.Play();
 	   					 playing = 1;
-	   					 Application.LoadLevel ("Runner");
+	   					 Time.timeScale = 1;
     				}
     	}
 

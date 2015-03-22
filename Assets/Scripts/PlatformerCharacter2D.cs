@@ -13,6 +13,7 @@ namespace UnitySampleAssets._2D
         [SerializeField] private float jumpForce = 200f; // Amount of force added when the player jumps.	
 		[SerializeField] private float playerAcceleration = 0.02f;
 		[SerializeField] private bool doubleBool = false;
+		[SerializeField] private bool debugSong = false;
         [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;
                                                      // Amount of maxSpeed applied to crouching movement. 1 = 100%
 
@@ -30,6 +31,13 @@ namespace UnitySampleAssets._2D
         private void Awake()
         {
             // Setting up references.
+			if (debugSong){
+				maxSpeed = 0;
+				playerAcceleration = 0;
+			}
+
+
+
             groundCheck = transform.Find("GroundCheck");
             ceilingCheck = transform.Find("CeilingCheck");
             anim = GetComponent<Animator>();

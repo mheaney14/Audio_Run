@@ -10,6 +10,7 @@ namespace UnitySampleAssets._2D
         private PlatformerCharacter2D character;
         private bool jump;
 		private bool stop;
+		private int  holdTime;
 		//var touch : Touch in Input.touches
 
         private void Awake()
@@ -22,9 +23,14 @@ namespace UnitySampleAssets._2D
 			if (Input.touchCount > 0) {
 				if (Input.GetTouch (0).phase == TouchPhase.Began) {
 					jump = true;
+					
+				
 				}
 				if (Input.GetTouch (0).phase == TouchPhase.Ended) {
 					stop = false;
+				}
+				else{
+					stop =false;
 				}
 			}
 
@@ -54,6 +60,7 @@ namespace UnitySampleAssets._2D
 			character.Move(1, false, jump,stop);
             jump = false;
 			stop = false;
+			holdTime = 0;
         }
     }
 }
