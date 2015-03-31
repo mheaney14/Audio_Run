@@ -12,6 +12,9 @@
     
     function grabMusic(){
      	opened = 0;	
+     	if (Application.platform == RuntimePlatform.Android){
+     			UniFileBrowser.use.SetPath ("/mnt/sdcard/music");
+     	}
     	UniFileBrowser.use.OpenFileWindow (OpenFile);
     
     }

@@ -151,7 +151,7 @@ MonoBehaviour:
   m_szLastControllerName: Bass
   controllerSourceValue: 0
   minControllerValue: 0
-  maxControllerValue: 1
+  maxControllerValue: .5
   minPropertyValue: .800000012
   maxPropertyValue: 1
   invertValue: 0

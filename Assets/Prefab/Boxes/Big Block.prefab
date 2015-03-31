@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_oVisManager: {fileID: 0}
-  m_szLastVisManagerName: 
+  m_szLastVisManagerName: VisualizerManager
   controller: {fileID: 0}
   m_szLastControllerName: Bass
   controllerSourceValue: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   maxControllerValue: 1
   minPropertyValue: .699999988
   maxPropertyValue: 1
-  invertValue: 1
+  invertValue: 0
   targetProperty: 12
 --- !u!114 &11452960
 MonoBehaviour:
