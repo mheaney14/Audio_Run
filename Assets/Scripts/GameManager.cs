@@ -4,7 +4,7 @@ using System.Threading;
 
 public class GameManager : MonoBehaviour {
 	[SerializeField]  public static double score;
-	public static bool doubleScore;
+    public static bool doubleScore;
 	[SerializeField]  private int scoreMulti;
 	[SerializeField]  private double increment;
 	[SerializeField]  private string difficulty;
@@ -21,14 +21,16 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (doubleScore == true) {
+	if (doubleScore == true) {
 						score = (score + increment) * scoreMulti + 500;
+						scoreString = score.ToString ();
 				} 
 		else {
 						score = (score + increment) * scoreMulti;
 						scoreString = score.ToString ();
-						Thread.Sleep(100);
+						//Thread.Sleep(100);
 				}
+		//GUI.Label (new Rect(100, 275, 500, 1000), scoreString);
 		}
 	void OnGUI (){
 			//var col = GUI.color;
