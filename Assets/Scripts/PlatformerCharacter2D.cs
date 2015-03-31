@@ -46,6 +46,10 @@ namespace UnitySampleAssets._2D
 
         private void FixedUpdate()
         {
+			if (rigidbody2D.velocity.x < maxSpeed) {
+				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+						}
+			Debug.Log (rigidbody2D.velocity.x);	
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
             anim.SetBool("Ground", grounded);
@@ -59,6 +63,9 @@ namespace UnitySampleAssets._2D
 		void Update () {
 			maxSpeed = maxSpeed + playerAcceleration;
 			jumpForce = jumpForce + playerAcceleration / 2;
+			if (rigidbody2D.velocity.x < maxSpeed) {
+				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+			}
 		}
 
         public void Move(float move, bool crouch, bool jump,bool stop)
@@ -86,7 +93,7 @@ namespace UnitySampleAssets._2D
                 anim.SetFloat("Speed", Mathf.Abs(move));
 
                 // Move the character
-                rigidbody2D.velocity = new Vector2(move*maxSpeed, rigidbody2D.velocity.y);
+                //rigidbody2D.velocity = new Vector2(move*maxSpeed, rigidbody2D.velocity.y);
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !facingRight)
