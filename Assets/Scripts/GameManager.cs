@@ -5,14 +5,17 @@ using System.Threading;
 public class GameManager : MonoBehaviour {
 	[SerializeField]  public static double score;
     public static bool doubleScore;
-	[SerializeField]  private int scoreMulti;
-	[SerializeField]  private double increment;
+	/*[SerializeField]*/  public static int scoreMulti;
+	/*[SerializeField]*/  public static double increment;
+	[SerializeField]  private float doubleTime;
 	[SerializeField]  private string difficulty;
 	private string scoreString;
 
 
 	// Use this for initialization
 	void Start () {
+		scoreMulti = 1;
+		increment = 1;
 		score = 0;
 		if (difficulty == "Easy") {
 						scoreMulti = scoreMulti / 2;
@@ -22,15 +25,21 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	if (doubleScore == true) {
-						score = (score + increment) * scoreMulti + 500;
-						scoreString = score.ToString ();
+			score = (score + increment * 10) * scoreMulti;
+			scoreString = "Score: " + score.ToString ();
+			deactivateDouble();
 				} 
 		else {
 						score = (score + increment) * scoreMulti;
-						scoreString = score.ToString ();
+						scoreString = "Score: " + score.ToString ();
 						//Thread.Sleep(100);
 				}
 		//GUI.Label (new Rect(100, 275, 500, 1000), scoreString);
+		}
+	IEnumerator deactivateDouble(){
+		yield return new WaitForSeconds (doubleTime);
+		Debug.Log ("Deactivate");
+		doubleScore = false;
 		}
 	void OnGUI (){
 			//var col = GUI.color;
