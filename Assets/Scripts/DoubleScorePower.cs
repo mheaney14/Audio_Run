@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Threading;
 
-public class DoubleScorePower : MonoBehaviour {
+ class DoubleScorePower1 : MonoBehaviour {
 	[SerializeField] private float doubleTime;
 	// Use this for initialization	
 	void OnTriggerEnter2D(Collider2D other)
