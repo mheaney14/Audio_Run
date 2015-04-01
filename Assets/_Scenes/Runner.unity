@@ -828,7 +828,7 @@ Transform:
   - {fileID: 1798475669}
   - {fileID: 737022786}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1 &76396340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,7 +1802,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30.9200001
+      value: 35.2299995
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2586,7 +2586,7 @@ Transform:
   m_PrefabInternal: {fileID: 1917210534}
   m_GameObject: {fileID: 190140467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .180000007, z: 0}
+  m_LocalPosition: {x: 0, y: .126000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2120761688}
@@ -2807,7 +2807,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 17
 --- !u!1 &198072079
 GameObject:
   m_ObjectHideFlags: 0
@@ -6580,7 +6580,7 @@ Transform:
   m_PrefabInternal: {fileID: 145955632}
   m_GameObject: {fileID: 420221838}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.9200001, y: 12.9399996, z: 0}
+  m_LocalPosition: {x: 35.2299995, y: 12.9399996, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6821,6 +6821,7 @@ GameObject:
   - 4: {fileID: 431186631}
   - 114: {fileID: 431186630}
   - 114: {fileID: 431186632}
+  - 114: {fileID: 431186633}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -6872,6 +6873,20 @@ MonoBehaviour:
   checkMethods: 4096
   m_ActionBase: {fileID: 826727760}
   checksPerformed: 0
+--- !u!114 &431186633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 431186629}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ecd0281c2ea5464fbf24bbd2ac648bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreMulti: 1
+  increment: 1
+  difficulty: Easy
 --- !u!1 &433640893
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,7 +6985,7 @@ Transform:
   - {fileID: 35671783}
   - {fileID: 1266284456}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
 --- !u!1 &459935838
 GameObject:
   m_ObjectHideFlags: 0
@@ -7517,7 +7532,7 @@ Transform:
   m_PrefabInternal: {fileID: 1917210534}
   m_GameObject: {fileID: 497309730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.179000005, z: 0}
+  m_LocalPosition: {x: 0, y: -.150999993, z: 0}
   m_LocalScale: {x: .564482868, y: .564483702, z: 1}
   m_Children: []
   m_Father: {fileID: 2120761688}
@@ -8902,7 +8917,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 31
+      value: 26.8299999
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -10514,7 +10529,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 991564944e0915648b7ecf0f9cbb13f5, type: 2}
       propertyPath: displayControllerDebug
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 991564944e0915648b7ecf0f9cbb13f5, type: 2}
       propertyPath: windowSize
@@ -14175,7 +14190,7 @@ Transform:
   - {fileID: 1151578404}
   - {fileID: 603911507}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
 --- !u!1 &959286582
 GameObject:
   m_ObjectHideFlags: 0
@@ -14941,7 +14956,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 31
+      value: 26.6000004
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -24339,6 +24354,7 @@ GameObject:
   - 114: {fileID: 1671977144}
   - 114: {fileID: 1671977143}
   - 114: {fileID: 1671977142}
+  - 114: {fileID: 1671977149}
   m_Layer: 0
   m_Name: MidLow
   m_TagString: Untagged
@@ -24451,11 +24467,29 @@ Transform:
   m_PrefabInternal: {fileID: 1008051994}
   m_GameObject: {fileID: 1671977141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: 1.66999996, z: 0}
+  m_LocalPosition: {x: 26.6000004, y: 1.66999996, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
+--- !u!114 &1671977149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1671977141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933756040186d764d9d1fe1385c6c180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 106036, guid: d152671cceebd564388f259e97232023, type: 2}
+  - {fileID: 193622, guid: 7282f2124cd089449b8ae262e1bcde30, type: 2}
+  spawnMin: 1
+  spawnMax: 10
+  delta: 2
+  max: 20
 --- !u!1 &1678392355
 GameObject:
   m_ObjectHideFlags: 0
@@ -27160,7 +27194,7 @@ Transform:
   - {fileID: 1343726432}
   - {fileID: 2015053560}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
 --- !u!1 &1839744626
 GameObject:
   m_ObjectHideFlags: 0
@@ -27707,7 +27741,7 @@ Transform:
   - {fileID: 853963395}
   - {fileID: 1048919739}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
 --- !u!1 &1872082133
 GameObject:
   m_ObjectHideFlags: 0
@@ -28822,15 +28856,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Size.x
-      value: .249999925
+      value: .1729552
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Size.y
-      value: .271723837
+      value: .160121575
       objectReference: {fileID: 0}
     - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Center.y
-      value: .0158900265
+      value: .0324638709
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_GravityScale
@@ -28855,7 +28889,7 @@ Prefab:
         type: 3}
     - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Radius
-      value: .128432751
+      value: .112089954
       objectReference: {fileID: 0}
     - target: {fileID: 5800000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Center.y
@@ -28867,11 +28901,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.179000005
+      value: -.150999993
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_LocalPosition.y
-      value: .180000007
+      value: .126000002
       objectReference: {fileID: 0}
     - target: {fileID: 21200000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Color.r
@@ -28884,6 +28918,10 @@ Prefab:
     - target: {fileID: 21200000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
+      propertyPath: m_Center.x
+      value: .00583696365
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
@@ -29483,6 +29521,7 @@ GameObject:
   - 114: {fileID: 1965820107}
   - 114: {fileID: 1965820106}
   - 114: {fileID: 1965820105}
+  - 114: {fileID: 1965820112}
   m_Layer: 0
   m_Name: Highs
   m_TagString: Untagged
@@ -29595,11 +29634,29 @@ Transform:
   m_PrefabInternal: {fileID: 581332842}
   m_GameObject: {fileID: 1965820104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31, y: 7.57999992, z: 0}
+  m_LocalPosition: {x: 26.8299999, y: 7.57999992, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
+--- !u!114 &1965820112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1965820104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933756040186d764d9d1fe1385c6c180, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj:
+  - {fileID: 106036, guid: d152671cceebd564388f259e97232023, type: 2}
+  - {fileID: 193622, guid: 7282f2124cd089449b8ae262e1bcde30, type: 2}
+  spawnMin: 1
+  spawnMax: 10
+  delta: 1
+  max: 20
 --- !u!1 &1966098067
 GameObject:
   m_ObjectHideFlags: 0
@@ -31509,7 +31566,7 @@ Transform:
   - {fileID: 130883593}
   - {fileID: 951248125}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
 --- !u!1 &2112367890
 GameObject:
   m_ObjectHideFlags: 0
@@ -31800,8 +31857,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_IsTrigger: 0
-  m_Size: {x: .249999925, y: .271723837}
-  m_Center: {x: 0, y: .0158900265}
+  m_Size: {x: .1729552, y: .160121575}
+  m_Center: {x: .00583696365, y: .0324638709}
 --- !u!114 &2120761682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31862,7 +31919,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Radius: .128432751
+  m_Radius: .112089954
   m_Center: {x: 0, y: -.0500000007}
 --- !u!95 &2120761686
 Animator:
@@ -32211,7 +32268,7 @@ MonoBehaviour:
   audioSource: {fileID: 948854185}
   displaySpectrumDebug: 0
   displayDataGroupDebug: 0
-  displayControllerDebug: 1
+  displayControllerDebug: 0
   debugSpectrumBarWidth: 1
   debugSpectrumBarHeight: 80
   debugRawAudioBarHeight: 40
