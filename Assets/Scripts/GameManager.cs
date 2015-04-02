@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
 		increment = 2;
 		score = 0;
 		if (difficulty == "Easy") {
-						increment = increment / 2;
+			increment = increment / 2;
 			Debug.Log("Easy");
 				}
 	}
@@ -37,7 +37,8 @@ public class GameManager : MonoBehaviour {
 						//Thread.Sleep(100);
 				}
 				DoNotDestroy.setscoreLocal (score);
-
+		//Debug.Log (difficulty);
+		checkNegative ();
 		}
 	void OnGUI (){
 			//var col = GUI.color;
@@ -62,4 +63,10 @@ public class GameManager : MonoBehaviour {
 			doubleScore = false;
 		}
 	}
+	void checkNegative()
+	{
+				if (score < 0) {
+						score = 0;
+				}
+		}
 }
