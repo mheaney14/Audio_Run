@@ -13,6 +13,7 @@ public class DoubleScorePower : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			GameManager.doubleScore = true;
+			Destroy(gameObject);
 //			GetComponent(MeshRenderer).enabled = false;
 			//Thread.Sleep(doubleTime);
 			//GameManager.doubleScore = false;

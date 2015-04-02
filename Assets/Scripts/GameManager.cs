@@ -6,13 +6,14 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]  public static double score;
 	public static bool doubleScore;
 	[SerializeField]  private int scoreMulti;
-	[SerializeField]  private double increment;
+    public static double increment;
 	[SerializeField]  private string difficulty;
 	private string scoreString;
 
 
 	// Use this for initialization
 	void Start () {
+		increment = 1;
 		score = 0;
 		if (difficulty == "Easy") {
 						scoreMulti = scoreMulti / 2;
@@ -22,12 +23,13 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (doubleScore == true) {
-						score = (score + increment) * scoreMulti + 500;
+			score = (score + increment * 10) * scoreMulti;
+			scoreString = "Score: " + score.ToString ();
 				} 
 		else {
 						score = (score + increment) * scoreMulti;
-						scoreString = score.ToString ();
-						Thread.Sleep(100);
+						scoreString = "Score: " + score.ToString ();
+						//Thread.Sleep(100);
 				}
 		}
 	void OnGUI (){
