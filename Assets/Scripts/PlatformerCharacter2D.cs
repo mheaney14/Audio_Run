@@ -48,7 +48,7 @@ namespace UnitySampleAssets._2D
         private void FixedUpdate()
         {
 			if (rigidbody2D.velocity.x < maxSpeed) {
-				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+				rigidbody2D.velocity = new Vector2(1*maxSpeed*musicMulti, rigidbody2D.velocity.y);
 						}
 			//Debug.Log (rigidbody2D.velocity.x);	
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -64,11 +64,14 @@ namespace UnitySampleAssets._2D
 		void Update () {
 			musicMulti = transform.localScale.z;
 
+			if (rigidbody2D.velocity.x < maxSpeed) {
+				rigidbody2D.velocity = new Vector2(1*maxSpeed*musicMulti, rigidbody2D.velocity.y);
+			}
 			//maxSpeed = maxSpeed + playerAcceleration;
 			jumpForce = jumpForce + playerAcceleration / 2;
-			if (rigidbody2D.velocity.x < maxSpeed) {
-				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
-			}
+			//if (rigidbody2D.velocity.x < maxSpeed) {
+			//	rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
+			//}
 		}
 
         public void Move(float move, bool crouch, bool jump,bool stop)
