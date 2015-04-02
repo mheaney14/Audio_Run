@@ -2161,7 +2161,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -369, y: 162}
+  m_AnchoredPosition: {x: -749, y: 428}
   m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &160687894
@@ -6682,7 +6682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2120761688}
   offset: 45
-  height: 18
+  height: 17
 --- !u!1 &421575892
 GameObject:
   m_ObjectHideFlags: 0
@@ -8988,11 +8988,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.8299999
+      value: 33.8899994
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.57999992
+      value: 6.69999981
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.z
@@ -9016,7 +9016,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 11488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: spawnMax
@@ -13777,7 +13777,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 30.9200001
+      value: 38.0699997
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13805,7 +13805,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 11488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: spawnMax
@@ -15026,7 +15026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 26.6000004
+      value: 33.8400002
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_LocalPosition.y
@@ -15054,7 +15054,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 11488168, guid: 7dccbb4a9b8a53b4a9f25ee6890cdddf, type: 2}
       propertyPath: spawnMax
@@ -19685,9 +19685,9 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1005.40002
-  field of view: 60
+  field of view: 13
   orthographic: 1
-  orthographic size: 11.2749472
+  orthographic size: 9.99362087
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -19726,7 +19726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 077993317a21f0d488814dfaeea7b0d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraOffsetX: 22
+  CameraOffsetX: 15
   CameraOffsetY: 2
   player: {fileID: 2120761688}
 --- !u!114 &1300515720
@@ -19993,7 +19993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2120761688}
-  offset: 45
+  offset: 46
   height: 3
 --- !u!114 &1318515440
 MonoBehaviour:
@@ -20086,7 +20086,7 @@ Transform:
   m_PrefabInternal: {fileID: 948139598}
   m_GameObject: {fileID: 1318515438}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.9200001, y: -3.75999999, z: 0}
+  m_LocalPosition: {x: 38.0699997, y: -3.75999999, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24444,7 +24444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2120761688}
-  offset: 35
+  offset: 55
   height: 8
 --- !u!114 &1671977143
 MonoBehaviour:
@@ -24537,7 +24537,7 @@ Transform:
   m_PrefabInternal: {fileID: 1008051994}
   m_GameObject: {fileID: 1671977141}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.6000004, y: 1.66999996, z: 0}
+  m_LocalPosition: {x: 33.8400002, y: 1.66999996, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -28911,11 +28911,11 @@ Prefab:
       objectReference: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: maxSpeed
-      value: 13.3699999
+      value: 20.7000008
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: jumpForce
-      value: 2180
+      value: 2300
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: playerAcceleration
@@ -28939,7 +28939,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_GravityScale
-      value: 7.4000001
+      value: 9.22000027
       objectReference: {fileID: 0}
     - target: {fileID: 5000000, guid: 87a2357765801c34292d6718d8b4d770, type: 2}
       propertyPath: m_Mass
@@ -29616,8 +29616,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2120761688}
-  offset: 35
-  height: 14
+  offset: 55
+  height: 13
 --- !u!114 &1965820106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29709,7 +29709,7 @@ Transform:
   m_PrefabInternal: {fileID: 581332842}
   m_GameObject: {fileID: 1965820104}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.8299999, y: 7.57999992, z: 0}
+  m_LocalPosition: {x: 33.8899994, y: 6.69999981, z: 0}
   m_LocalScale: {x: .962499976, y: .925000131, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -29847,7 +29847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 2120761688}
   offset: 50
-  height: -3
+  height: -2
 --- !u!114 &1966626163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31958,8 +31958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08f91df3bd212f429df17f53ce2f364, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 13.3699999
-  jumpForce: 2180
+  maxSpeed: 20.7000008
+  jumpForce: 2300
   playerAcceleration: 0
   doubleBool: 0
   debugSong: 0
@@ -31978,7 +31978,7 @@ Rigidbody2D:
   m_Mass: 1.00999999
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 7.4000001
+  m_GravityScale: 9.22000027
   m_FixedAngle: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -32067,8 +32067,8 @@ MonoBehaviour:
   controllerSourceValue: 0
   minControllerValue: 0
   maxControllerValue: 1
-  minPropertyValue: 2
-  maxPropertyValue: 2.42000008
+  minPropertyValue: 20
+  maxPropertyValue: 25
   invertValue: 0
   targetProperty: 15
 --- !u!1 &2129335156

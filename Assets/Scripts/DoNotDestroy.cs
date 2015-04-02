@@ -14,6 +14,10 @@ public class DoNotDestroy : MonoBehaviour {
 	{
 		scoreLocal = scoreFrom;
 	}
+	public void disableButtons() {
+		ManagerScript.enabled = !ManagerScript.enabled;
+		//ManagerScript.enabled = !ManagerScript.enabled;
+	}
 	public void setDifficulty(string diff) {
 		difficulty = diff;
 	} 
