@@ -3,7 +3,7 @@ using System.Collections;
 using System.Threading;
 
 public class DoubleScorePower : MonoBehaviour {
-	[SerializeField] private int doubleTime;
+	//[SerializeField] private int doubleTime;
 	// Use this for initialization
 	void Start () {
 	
@@ -13,6 +13,7 @@ public class DoubleScorePower : MonoBehaviour {
 	{
 		if (other.tag == "Player") {
 			GameManager.doubleScore = true;
+			GameManager.doubleTime = 100;
 			Destroy(gameObject);
 //			GetComponent(MeshRenderer).enabled = false;
 			//Thread.Sleep(doubleTime);
