@@ -7,16 +7,18 @@ public class GameManager : MonoBehaviour {
 	public static bool doubleScore;
 	[SerializeField]  private int scoreMulti;
     public static double increment;
-	[SerializeField]  private string difficulty;
+	 private string difficulty;
 	private string scoreString;
 
 
 	// Use this for initialization
 	void Start () {
+		difficulty = DoNotDestroy.difficulty;
 		increment = 1;
 		score = 0;
 		if (difficulty == "Easy") {
 						scoreMulti = scoreMulti / 2;
+			Debug.Log("Easy");
 				}
 	}
 	
@@ -35,8 +37,10 @@ public class GameManager : MonoBehaviour {
 	void OnGUI (){
 			//var col = GUI.color;
 			//col.a = alpha;
-			//GUI.color = col;
-			GUI.Label (new Rect(100, 275, 500, 1000), scoreString);
+		//GUI.color = col; //100, 275, 500, 1000
+
+		//><size=40>Lose</size>
+		GUI.Label (new Rect(100, 275, 500, 1000),"<size=40>" + scoreString + "</size>");
 			//col.a = 1.0f;
 			//GUI.color = col;
 		}

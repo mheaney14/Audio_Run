@@ -2,7 +2,7 @@
 
     var MusicFolder : System.IO.DirectoryInfo;
     var myClip : WWW;
-    var myPath : String;
+  static var myPath : String;
     var opened : int;
     public var playing : int = 0;
     private var message = "";
@@ -25,8 +25,8 @@
     }
     function Start()
     {
-	Time.timeScale = 0;
-	grabMusic();
+	//Time.timeScale = 0;
+	//grabMusic();
 	    
     
     }
@@ -62,7 +62,7 @@
 		//Debug.Log(pathToFile);
 		myPath = pathToFile;
 		//message = "You selected file: " + pathToFile;
-		loadMusic();
+		//loadMusic();
 	}
     
     
