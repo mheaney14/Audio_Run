@@ -10,7 +10,7 @@ function Start () {
 		loadMusic();
 }
  function loadMusic(){
-    	
+
     	MusicFolder = new System.IO.DirectoryInfo(myPathLocal);
 	    myClip = new WWW("file:///" + MusicFolder.GetFiles()[0].FullName);
 	    audio.clip = myClip.GetAudioClip(false, false);
@@ -28,4 +28,6 @@ function Update () {
 	   					//Time.timeScale = 1;
     				}
     	}
-}
+   } 	
+
+    

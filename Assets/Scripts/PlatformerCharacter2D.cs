@@ -15,11 +15,12 @@ namespace UnitySampleAssets._2D
 		[SerializeField] private bool doubleBool = false;
 		[SerializeField] private bool debugSong = false;
         [Range(0, 1)] [SerializeField] private float crouchSpeed = .36f;
+
                                                      // Amount of maxSpeed applied to crouching movement. 1 = 100%
 
         [SerializeField] private bool airControl = false; // Whether or not a player can steer while jumping;
         [SerializeField] private LayerMask whatIsGround; // A mask determining what is ground to the character
-
+		private float		 musicMulti = 1f;		//
         private Transform groundCheck; // A position marking where to check if the player is grounded.
         private float groundedRadius = .2f; // Radius of the overlap circle to determine if grounded
         private bool grounded = false; // Whether or not the player is grounded.
@@ -49,7 +50,7 @@ namespace UnitySampleAssets._2D
 			if (rigidbody2D.velocity.x < maxSpeed) {
 				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
 						}
-			Debug.Log (rigidbody2D.velocity.x);	
+			//Debug.Log (rigidbody2D.velocity.x);	
             // The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
             grounded = Physics2D.OverlapCircle(groundCheck.position, groundedRadius, whatIsGround);
             anim.SetBool("Ground", grounded);
@@ -61,7 +62,9 @@ namespace UnitySampleAssets._2D
 				doubleJump = false;
         }
 		void Update () {
-			maxSpeed = maxSpeed + playerAcceleration;
+			musicMulti = transform.localScale.z;
+
+			//maxSpeed = maxSpeed + playerAcceleration;
 			jumpForce = jumpForce + playerAcceleration / 2;
 			if (rigidbody2D.velocity.x < maxSpeed) {
 				rigidbody2D.velocity = new Vector2(maxSpeed, rigidbody2D.velocity.y);
@@ -84,7 +87,7 @@ namespace UnitySampleAssets._2D
             anim.SetBool("Crouch", crouch);
 
             //only control the player if grounded or airControl is turned on
-            if (grounded || airControl)
+            if (grounded && !jump)
             {
                 // Reduce the speed if crouching by the crouchSpeed multiplier
                 move = (crouch ? move*crouchSpeed : move);
@@ -93,7 +96,7 @@ namespace UnitySampleAssets._2D
                 anim.SetFloat("Speed", Mathf.Abs(move));
 
                 // Move the character
-                //rigidbody2D.velocity = new Vector2(move*maxSpeed, rigidbody2D.velocity.y);
+                rigidbody2D.velocity = new Vector2(move*maxSpeed*musicMulti, rigidbody2D.velocity.y);
 
                 // If the input is moving the player right and the player is facing left...
                 if (move > 0 && !facingRight)
