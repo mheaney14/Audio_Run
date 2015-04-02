@@ -51,10 +51,10 @@
     }
     
 	function OpenFile (pathToFile : String) {
-		//Debug.Log(pathToFile);
+	
 		myPath = pathToFile;
-		//message = "You selected file: " + pathToFile;
-		//loadMusic();
+			//This runs when the user has found a file
+
 	}
     
     

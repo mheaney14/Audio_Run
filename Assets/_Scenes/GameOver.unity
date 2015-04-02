@@ -278,7 +278,7 @@ RectTransform:
   m_GameObject: {fileID: 1112372744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 3.43489981, y: 3.43489861, z: 3.43489861}
   m_Children:
   - {fileID: 2101796885}
   - {fileID: 1323253166}
@@ -289,9 +289,9 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 361.5, y: 170.020004}
+  m_SizeDelta: {x: 723, y: 327}
+  m_Pivot: {x: .5, y: .5}
 --- !u!114 &1112372746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,8 +337,8 @@ Canvas:
   m_GameObject: {fileID: 1112372744}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 2
+  m_Camera: {fileID: 1573944365}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -730,7 +730,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 185.620682
+  orthographic size: 573.320618
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
