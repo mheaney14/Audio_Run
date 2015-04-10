@@ -3,7 +3,7 @@ using System.Collections;
 public class ManagerScript : MonoBehaviour {
 	public static bool enabled = true;
 	//Enabled sets if changeScene works
-	public static void changeScene(string sceneName) {
+	public void changeScene(string sceneName) {
 		if (enabled) {
 						Application.LoadLevel (sceneName);
 				}

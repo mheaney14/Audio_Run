@@ -17,7 +17,7 @@ namespace UnityTest
 			PauseGame.pause ();
 			Assert.That (Time.timeScale == 0);
 		}
-		
+		/*
 		[Test]
 		public static void TestChangeScene()
 		{
@@ -25,5 +25,7 @@ namespace UnityTest
 			//Assert.That (Application.loadedLevelName == "Runner");
 			Assert.That (String.Equals (Application.loadedLevelName,"Runner"));
 		}
+		*/
 	}
+	
 }
