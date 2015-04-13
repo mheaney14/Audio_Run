@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PauseGame : MonoBehaviour {
 
-	public static void pause() {
+	public void pause() {
 		if (Time.timeScale == 1) {
 				Time.timeScale = 0;
 				GameManager.increment = 0;

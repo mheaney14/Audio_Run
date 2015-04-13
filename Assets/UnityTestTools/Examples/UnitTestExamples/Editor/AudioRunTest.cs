@@ -10,6 +10,7 @@ namespace UnityTest
     [Category("Sample Tests")]
     internal class AudioRunTest
     {
+		/*
 		[Test]
 		public static void TestPause()
 		{
@@ -17,7 +18,7 @@ namespace UnityTest
 			PauseGame.pause ();
 			Assert.That (Time.timeScale == 0);
 		}
-		/*
+
 		[Test]
 		public static void TestChangeScene()
 		{
